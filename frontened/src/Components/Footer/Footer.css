@@ -1,0 +1,137 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* height: 100px; */
+}
+
+.footer-logo img {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-logo p {
+    color: #008080;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    /* width: 100%; */
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.footer-links-grid ul {
+    list-style: none;
+    color: #252525;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.footer-links-grid ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-links-grid ul li:hover {
+    color: teal;
+}
+
+.footer-social-icon {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons-container {
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-icons-container i {
+  font-size: 18px;
+  color: #252525;
+}
+
+.footer-icons-container:hover {
+  background-color: #008080;
+  box-shadow: 0px 6px 12px rgba(0, 128, 128, 0.3);
+}
+
+.footer-icons-container:hover i {
+  color: white;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+}
+
+@media(max-width:800px) {
+    .footer {
+        gap: 20px;
+    }
+
+    .footer-logo {
+        gap: 10px;
+        align-items: end;
+    }
+
+    .footer-logo img {
+        width: 40px;
+    }
+
+    .footer-logo p {
+        font-size: 25px;
+    }
+
+    .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on small screens */
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .footer-social-icon img {
+        width: 22px;
+    }
+
+    .footer-copyright {
+        font-size: 13px;
+    }
+}
